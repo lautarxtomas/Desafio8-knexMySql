@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/font-awesome-solid/512/book-quran-512.png" type="image/x-icon">
+    <title>Ultimate Chat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<body class="jumbotron">
+    <div class="container mt-3">
+        <h1>Ingresar Productos</h1>
+        <form onsubmit="agregarProducto(this)">
+            <input type="text" id="name" placeholder="Ingresá nombre producto" required>
+            <input type="number" id="price" placeholder="Ingresa un precio" required>
+            <input type="number" id="stock" placeholder="Ingresa stock" required>
+            <input type="text" id="code" placeholder="Ingresá código de producto" required>
+            <input type="text" id="description" placeholder="Ingresá la descripción del producto" required>
+            <input type="url" id="image" placeholder="Ingresa url de imagen">
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="productos"></div>
+        <!-- <div id="lista">
+            <button onclick="" type="button" value="">Mostrar Lista de Productos</button>
+        </div> -->
+    </div>
+
+    <br><br><hr><br><br>
+
+    <div class="container mt-3">
+        <h1>Chat</h1>
+        <form onsubmit="agregarMensaje(this)">
+            <input type="email" id="email" placeholder="Ingresá tu email" required>
+            <input type="text" id="texto" placeholder="Ingresa un comentario">
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="mensajes"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "chatnode",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "startDev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-ejs": "^2.0.0",
+    "knex": "^2.3.0",
+    "module": "^1.2.5",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.5.2",
+    "socket.io-client": "^4.5.3",
+    "sqlite3": "^5.1.2"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": []
+}
